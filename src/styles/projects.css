@@ -1,0 +1,122 @@
+.projects-wrap {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.projects-title {
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 40px;
+    background: linear-gradient(90deg, #ff8a00, #e52e71);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background: linear-gradient(#ffffff, #ffffff) padding-box,
+    linear-gradient(
+        45deg, #ff8a00, #e52e71
+    ) border-box;
+    border: 3px solid transparent;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    border-left: 5px solid transparent;
+    transform: translateY(10px);
+    opacity: 0;
+    animation: fadeInUp 1s forwards;
+    transition: transform 03s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+    background-color: #fafafa;
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.project-header h2 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin: 0;
+    font-weight: 600;
+}
+
+.project-header span {
+    font-size: 30px;
+    color: #2980b9;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.project-header span:hover {
+    color: #ff8a00;
+}
+
+.project-card.active .project-header span {
+    color: #2980b9;
+}
+
+.project-description {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, margin-top 0.3s ease;
+}
+
+.project-card.active .project-description {
+    max-height: 400px;
+    margin-top: 12px;
+}
+
+.project-description p {
+    margin: 0 0 10px 0;
+    color: #555;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.project-tags {
+    margin-top: 10px;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #ff8a00;
+    color: white;
+    padding: 4px 10px;
+    margin-right: 6px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.project-date {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #999
+}
+
+@keyframes fadeInUp {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
