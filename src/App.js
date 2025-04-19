@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Contacts from "./pages/Contacts";
 import Projects from "./pages/Projects";
+import ProjectDetail from "./pages/ProjectDetail";
 import "./styles/global.css";
 import "./styles/header.css";
 import "./styles/footer.css";
@@ -11,6 +12,7 @@ import "./styles/home.css"
 import "./styles/about.css"
 import "./styles/contacts.css"
 import "./styles/projects.css"
+import "./styles/projectDetails.css"
 
 const Header = () => (
   <header className="header">
@@ -40,6 +42,7 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/contacts" element={<Contacts />} />
             <Route path="/projects" element={<Projects />} />
+          <Route path="/projects/:id" element={<ProjectDetail />} />
         </Routes>
         <Footer />
       </div>
