@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
+import { useNavigate} from "react-router-dom";
 
 const projectsData = [
     {
@@ -28,36 +29,36 @@ const projectsData = [
 ];
 
 const Projects = () => {
-    const [activeProject, setActiveProject] = useState(null);
+    const navigate = useNavigate();
 
-    const toggleProject = (id) => {
-        setActiveProject(activeProject === id ? null : id);
-    };
+    const openProject = (id) => {
+        navigate(`/projects/${id}`);
+    }
+
 
     return (
         <div className="projects-wrap">
-            <h1 className="projects-title">My projects</h1>
+            <h1 className="projects-title">My Projects</h1>
             <div className="projects-grid">
                 {projectsData.map((project, index) => (
                     <div
                         key={project.id}
-                        className={`project-card ${activeProject === project.id ? "active" : ""}`}
-                        onClick={() => toggleProject(project.id)}
-                        style={{ animationDelay: `${index * 0.15}s`}}
+                        className="project-card"
+                        onClick={() => openProject(project.id)}
+                        style={{ animationDelay: `${index * 0.15}s` }}
                     >
                         <div className="project-header">
-                            <h2>{project.icon}{project.title}</h2>
-                            <span>{activeProject === project.id ? "-" : "+"}</span>
+                            <h2>{project.icon} {project.title}</h2>
                         </div>
                         <div className="project-description">
                             <p>{project.description}</p>
-                            <div className="project-tags">
-                                {project.tags.map(tag => (
-                                    <span key={tag} className="tag">{tag}</span>
-                                ))}
-                            </div>
-                            <div className="project-date">{project.date}</div>
                         </div>
+                        <div className="project-tags">
+                            {project.tags.map(tag => (
+                                <span key={tag} className="tag">{tag}</span>
+                            ))}
+                        </div>
+                        <div className="project-date">{project.date}</div>
                     </div>
                 ))}
             </div>
