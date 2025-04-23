@@ -2,9 +2,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     background: linear-gradient(135deg, #6e8efb, #a777e3);
-    padding: 40px 20px;
+    padding: 100px 20px 80px;
+    box-sizing: border-box;
 }
 
 .profile-cart {
@@ -18,7 +19,7 @@
     height: auto;
     width: 100%;
     overflow: hidden;
-    transition: transrofm 0.3s ease;
+    transition: transform 0.3s ease;
     margin-top: 60px;
 }
 
@@ -137,9 +138,10 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     background: linear-gradient(135deg, #3f4d87, #483563);
-    padding: 40px 20px;
+    padding: 100px 20px 80px;
+    box-sizing: border-box;
 }
 
 .theme-toggle {
