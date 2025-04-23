@@ -1,5 +1,5 @@
 import React from "react";
-import {FaEnvelope, FaPhoneAlt, FaGithub, FaLinkedin, FaDiscord} from "react-icons/fa"
+import {FaEnvelope, FaGithub, FaLinkedin, FaDiscord} from "react-icons/fa"
 
 const Contacts = () => {
     return (
@@ -9,10 +9,6 @@ const Contacts = () => {
                 <div className="contact-item">
                     <FaEnvelope className="icon" style={{ color: "red" }}/>
                     <p><a href="mailto:antropovdavid85@gmail.com">antropovdavid85@gmail.com</a></p>
-                </div>
-                <div className="contact-item">
-                    <FaPhoneAlt className="icon" style={{ color: "lime" }}/>
-                    <p><a href="tel:+12345678">+12345678</a></p>
                 </div>
                 <div className="contact-item">
                     <FaDiscord className="icon" style={{ color: "blue" }}/>
