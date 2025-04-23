@@ -18,6 +18,7 @@ const Contacts = () => {
                     <FaGithub className="icon" style={{ color: "black" }}/>
                     <p><a href="https://github.com/perogis" target="_blank" rel="noopener noreferrer">Github</a></p>
                 </div>
+
                 <div className="contact-item">
                     <FaLinkedin className="icon" style={{ color: "blue" }}/>
                     <p><a href="https://www.linkedin.com/in/david-antropov-54b2262a2/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
