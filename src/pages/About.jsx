@@ -1,12 +1,9 @@
 import React from "react";
-import { useState } from "react";
-
 
 const About = () => {
-    const [darkMode, setDarkMode] = useState(false);
 
     return (
-        <div className={`about-container ${darkMode ? "dark" : ""}`}>
+        <div className={about-container}>
             <div className="profile-cart">
                 <img src="/images/img.png" alt="Profile" className="profile-pic" />
                 <h1>David Antropov</h1>
@@ -36,7 +33,6 @@ const About = () => {
                     <p>Backed developer - 1 year</p>
                     <p>Freelance - 5+ products</p>
                 </div>
-                <button className="theme-toggle" onClick={() => setDarkMode(!darkMode)}>Toggle Theme</button>
             </div>
         </div>
     )
