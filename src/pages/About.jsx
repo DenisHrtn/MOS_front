@@ -1,9 +1,8 @@
 import React from "react";
 
 const About = () => {
-
     return (
-        <div className={about-container}>
+        <div className={"about-container"}>
             <div className="profile-cart">
                 <img src="/images/img.png" alt="Profile" className="profile-pic" />
                 <h1>David Antropov</h1>
