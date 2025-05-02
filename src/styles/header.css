@@ -29,3 +29,22 @@
 .header nav a:hover {
   color: #bacbdf;
 }
+
+.header .ADlink a {
+  color: #383838;
+  text-decoration: none;
+  margin: 30px 15px 10px 0px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  font-size: 50px;
+}
+
+.header .ADlink {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0px 0px 0px 20px;
+}
+
+.header .ADlink a:hover {
+  color: #696969;
+}

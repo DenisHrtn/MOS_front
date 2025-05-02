@@ -16,12 +16,14 @@ import "./styles/projectDetails.css"
 
 const Header = () => (
   <header className="header">
-    <h1>My Portfolio</h1>
+    <div className="ADlink">
+      <Link to="/">A.D.</Link>
+    </div>
     <nav>
       <Link to="/">Home</Link>
       <Link to="/about">About</Link>
       <Link to="/contacts">Contacts</Link>
-        <Link to="/projects">Projects</Link>
+      <Link to="/projects">Projects</Link>
     </nav>
   </header>
 );
