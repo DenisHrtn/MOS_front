@@ -56,3 +56,28 @@ main {
   flex-direction: column;
   min-height: 100vh;
 }
+
+body.dark {
+  background-color: #121212;
+}
+
+body.dark header {
+  background-color: #1e1e1e;
+}
+
+body.dark nav a {
+  color: #ffffff;
+}
+
+body.dark footer {
+  background-color: #1e1e1e;
+  color: #ccc;
+}
+
+.theme-toggle {
+  background: none;
+  border: none;
+  color: inherit;
+  font-weight: bold;
+  cursor: pointer;
+}

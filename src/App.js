@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -13,36 +13,44 @@ import "./styles/about.css"
 import "./styles/contacts.css"
 import "./styles/projects.css"
 import "./styles/projectDetails.css"
+import { ThemeContext } from "./ThemeContext";
 
-const Header = () => (
-  <header className="header">
-    <div className="ADlink">
-      <Link to="/">A.D.</Link>
-    </div>
-    <nav>
-      <Link to="/">Home</Link>
-      <Link to="/about">About</Link>
-      <Link to="/contacts">Contacts</Link>
-      <Link to="/projects">Projects</Link>
-    </nav>
-  </header>
-);
+const Header = () => {
+    const { darkMode, setDarkMode } = useContext(ThemeContext);
+
+    return (
+        <header className="header">
+          <div className="ADlink">
+            <Link to="/">A.D.</Link>
+          </div>
+          <nav>
+            <Link to="/">Home</Link>
+            <Link to="/about">About</Link>
+            <Link to="/contacts">Contacts</Link>
+            <Link to="/projects">Projects</Link>
+            <button onClick={() => setDarkMode(!darkMode)} className="theme-toggle">
+              {darkMode ? 'Light Mode' : 'Dark Mode'}
+            </button>
+          </nav>
+        </header>
+    )
+};
 
 const Footer = () => (
-  <footer className="footer">
-    <p>2025 My Own Site. All Rights Reserved.</p>
-  </footer>
+    <footer className="footer">
+      <p>2025 My Own Site. All Rights Reserved.</p>
+    </footer>
 );
 
 const App = () => {
   return (
-    <Router>
-      <div className="app-container">
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contacts" element={<Contacts />} />
+      <Router>
+        <div className="app-container">
+          <Header/>
+          <Routes>
+            <Route path="/" element={<Home/>}/>
+            <Route path="/about" element={<About/>}/>
+            <Route path="/contacts" element={<Contacts/>}/>
             <Route path="/projects" element={<Projects />} />
           <Route path="/projects/:id" element={<ProjectDetail />} />
         </Routes>
