@@ -2,9 +2,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
+    padding: 100px 20px 80px;
+    box-sizing: border-box;
     background: linear-gradient(135deg, #6e8efb, #a777e3);
-    padding: 40px 20px;
 }
 
 .profile-cart {
@@ -18,12 +19,8 @@
     height: auto;
     width: 100%;
     overflow: hidden;
-    transition: transrofm 0.3s ease;
+    transition: transform 0.3s ease;
     margin-top: 60px;
-}
-
-.profile-cart:hover {
-    transform: scale(1.02);
 }
 
 .profile-pic {
@@ -73,9 +70,17 @@ h1 {
     color: #333;
 }
 
-.skills, .experience {
+.skills {
     margin-top: 20px;
     padding: 10px;
+    background: #eee;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.experience {
+    margin-top: 20px;
+    padding: 10px 10px 10px 35px;
     background: #eee;
     border-radius: 10px;
     text-align: left;
@@ -94,52 +99,6 @@ h1 {
     position: fixed;
     bottom: 0;
     width: 100%;
-}
-
-.about-container.dark {
-    background-color: #1a1a1a;
-}
-
-.about-container.dark .profile-cart {
-    background: #333;
-}
-
-.about-container.dark .skills {
-    background: #5a5a5a;
-}
-
-.about-container.dark .experience {
-    background: #5a5a5a;
-}
-
-.about-container.dark .info-item {
-    background: #626262;
-}
-
-.about-container.dark .info-item span {
-    color: #212121;
-}
-
-.about-container.dark .profile-cart h1 {
-    color: #b0b0b0;
-}
-
-.about-container.dark .theme-toggle {
-    background: #bfbfbf;
-    color: #282c34;
-}
-
-.about-container.dark .profile-pic {
-    border: 4px solid #30164a;
-}
-
-.about-container.dark {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: linear-gradient(135deg, #3f4d87, #483563);
-    padding: 40px 20px;
 }
 
 .theme-toggle {
