@@ -1,3 +1,18 @@
+body.dark .about-container {
+    --bg-gradient: linear-gradient(135deg, #2e2e2e, #1a1a1a);
+}
+
+body:not(.dark) .about-container {
+    --bg-gradient: linear-gradient(135deg, #6e8efb, #a777e3);
+}
+
+body.dark {
+    --card-bg: #1e1e1e;
+    --text-color: #eee;
+    --info-bg: #2a2a2a;
+    --section-bg: #2a2a2a;
+}
+
 .about-container {
     display: flex;
     justify-content: center;
@@ -5,11 +20,12 @@
     min-height: 100vh;
     padding: 100px 20px 80px;
     box-sizing: border-box;
-    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    background: var(--bg-gradient);
 }
 
 .profile-cart {
-    background: white;
+    background: var(--card-bg);
+    color: var(--text-color);
     padding: 40px;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -52,7 +68,7 @@ h1 {
 }
 
 .info-item {
-    background: #f9f9f9;
+    background: var(--info-bg);
     padding: 10px;
     border-radius: 8px;
     text-align: center;
@@ -62,28 +78,30 @@ h1 {
 
 .info-item span {
     font-weight: bold;
-    color: #555;
+    color: var(--text-color);
 }
 
 .info-item p {
     margin: 5px 0 0;
-    color: #333;
+    color: var(--text-color);
 }
 
 .skills {
     margin-top: 20px;
     padding: 10px;
-    background: #eee;
+    background: var(--section-bg);
     border-radius: 10px;
     text-align: left;
+    color: var(--text-color);
 }
 
 .experience {
     margin-top: 20px;
     padding: 10px 10px 10px 35px;
-    background: #eee;
+    background: var(--section-bg);
     border-radius: 10px;
     text-align: left;
+    color: var(--text-color);
 }
 
 .skills h3, .experience h3 {
@@ -99,14 +117,4 @@ h1 {
     position: fixed;
     bottom: 0;
     width: 100%;
-}
-
-.theme-toggle {
-    margin-top: 15px;
-    padding: 8px 15px;
-    border: none;
-    background: #777777;
-    color: white;
-    cursor: pointer;
-    border-radius: 5px;
 }

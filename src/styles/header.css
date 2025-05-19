@@ -48,3 +48,14 @@
 .header .ADlink a:hover {
   color: #696969;
 }
+
+.theme-toggle {
+    margin-top: 15px;
+    margin-left: 65%;
+    padding: 8px 15px;
+    border: none;
+    background: #777777;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
