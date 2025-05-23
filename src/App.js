@@ -19,22 +19,28 @@ const Header = () => {
     const { darkMode, setDarkMode } = useContext(ThemeContext);
 
     return (
-        <header className="header">
-          <div className="ADlink">
-            <Link to="/">A.D.</Link>
-          </div>
-          <nav>
-            <Link to="/">Home</Link>
-            <Link to="/about">About</Link>
-            <Link to="/contacts">Contacts</Link>
-            <Link to="/projects">Projects</Link>
-            <button onClick={() => setDarkMode(!darkMode)} className="theme-toggle">
-              {darkMode ? 'Light Mode' : 'Dark Mode'}
-            </button>
-          </nav>
-        </header>
-    )
-};
+    <header className="header">
+      <div className="ADlink">
+        <Link to="/">A.D.</Link>
+      </div>
+      <nav>
+        <Link to="/">Home</Link>
+        <Link to="/about">About</Link>
+        <Link to="/contacts">Contacts</Link>
+        <Link to="/projects">Projects</Link>
+
+        <button
+          onClick={() => setDarkMode(!darkMode)}
+          className="theme-toggle"
+          aria-label="Toggle theme"
+        >
+          {darkMode ? '🌙' : '☀️'}
+        </button>
+      </nav>
+    </header>
+  );
+}
+
 
 const Footer = () => (
     <footer className="footer">
