@@ -8,7 +8,9 @@ const projectsData = [
         description: "Test project",
         tags: ['Python', 'Django'],
         date: "2024-05-14",
-        icon: "☎️"
+        icon: "☎️",
+        author: ['David'],
+        customer:['MR. Beast']
     },
     {
         id: 2,
@@ -16,7 +18,9 @@ const projectsData = [
         description: "Test project",
         tags: ['React', 'JS'],
         date: "2024-07-31",
-        icon: "🤳"
+        icon: "🤳",
+        author: ['Denis'],
+        customer: ['Zeus']
     },
     {
         id: 3,
@@ -24,7 +28,9 @@ const projectsData = [
         description: "Test project",
         tags: ['Python', 'FastAPI'],
         date: "2024-06-01",
-        icon: "📟"
+        icon: "📟",
+        author: ['Pavel'],
+        customer: ['Freya']
     }
 ];
 
@@ -59,6 +65,9 @@ const Projects = () => {
                             ))}
                         </div>
                         <div className="project-date">{project.date}</div>
+                        <div className="author-customer">
+                            <h1>author - {project.author}, customer - {project.customer}</h1>
+                        </div>
                     </div>
                 ))}
             </div>
