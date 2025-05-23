@@ -1,3 +1,10 @@
+body.dark {
+    --card-bg: #1e1e1e;
+    --text-color: #dedede;
+    --info-bg: #2a2a2a;
+    --section-bg: #ffffff;
+}
+
 .projects-wrap {
     max-width: 1200px;
     margin: 50px auto;
@@ -14,7 +21,8 @@
     font-weight: 800;
 }
 
-.project-author h1  {
+.author-customer h1  {
+    color: var(--text-color);
     font-size: 20px;
     margin-bottom: 10px;
     margin-top: 30px;
@@ -27,7 +35,7 @@
 }
 
 .project-card {
-    background: linear-gradient(#ffffff, #ffffff) padding-box,
+    background: var(--section-bg) padding-box,
     linear-gradient(
         45deg, #ff8a00, #e52e71
     ) border-box;
@@ -59,15 +67,15 @@
 }
 
 .project-header h2 {
+    color: var(--text-color);
     font-size: 24px;
-    color: #2c3e50;
     margin: 0;
     font-weight: 600;
 }
 
 .project-header span {
     font-size: 30px;
-    color: #2980b9;
+    color: var#2980b9;
     font-weight: bold;
     cursor: pointer;
     transition: color 0.3s ease;
