@@ -73,11 +73,3 @@ body.dark footer {
   background-color: #1e1e1e;
   color: #ccc;
 }
-
-.theme-toggle {
-  background: none;
-  border: none;
-  color: inherit;
-  font-weight: bold;
-  cursor: pointer;
-}

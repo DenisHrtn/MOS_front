@@ -5,6 +5,7 @@
   align-items: center;
   min-height: 100vh;
   /*background: linear-gradient(to bottom, #3b82f6, #6366f2);*/
+  /* НУЖНО ТЯНУТЬСЯ var'ы */
   color: white;
   padding: 20px;
   text-align: center;
