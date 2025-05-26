@@ -1,16 +1,18 @@
-body.dark {
+/* LIGHT AND DIRK VARS OVERRIDES */
+body.dark .contacts{
     --bg-gradient: linear-gradient(135deg, #121212, #1e1e1e);
     --card-bg: #1f1f1f;
     --text-color: #ddd;
     --link-color: #094746;
 }
 
-body:not(.dark) {
+body:not(.dark) .contacts{
     --bg-gradient: linear-gradient(135deg, #d3fff6, #2ec3a0);
     --card-bg: #fff;
     --text-color: #333;
     --link-color: #094746;
 }
+/*------------------------------*/
 
 /* contacts page styles */
 .contacts {
