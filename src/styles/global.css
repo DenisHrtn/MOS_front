@@ -1,3 +1,23 @@
+/* dark theme vars */
+:root {
+  --bg-gradient: linear-gradient(135deg, #6e8efb, #a777e3);
+  --card-bg: #ffffff;
+  --text-color: #222;
+  --info-bg: #f0f0f0;
+  --section-bg: #f8f8f8f8;
+  --link-color: #094746;
+}
+/*-------------------*/
+
+body.darl {
+  --bg-gradient: linear-gradient(135deg, #2e2e2e, #1a1a1a);
+  --card-bg: #1e1e1e;
+  --text-color: #eee;
+  --info-bg: #2a2a2a;
+  --section-bg: #2a2a2a;
+  --link-color: #0ff;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
