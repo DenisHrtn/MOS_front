@@ -4,31 +4,28 @@ import { useNavigate} from "react-router-dom";
 const projectsData = [
     {
         id: 1,
-        title: "Test",
+        title: "First",
         description: "Test project",
         tags: ['Python', 'Django'],
         date: "2024-05-14",
-        icon: "☎️",
         author: ['David'],
         customer:['MR. Beast']
     },
     {
         id: 2,
-        title: "Test 2",
+        title: "Second",
         description: "Test project",
         tags: ['React', 'JS'],
         date: "2024-07-31",
-        icon: "🤳",
         author: ['Denis'],
         customer: ['Zeus']
     },
     {
         id: 3,
-        title: "Test 3",
+        title: "Third",
         description: "Test project",
         tags: ['Python', 'FastAPI'],
         date: "2024-06-01",
-        icon: "📟",
         author: ['Pavel'],
         customer: ['Freya']
     }
@@ -54,7 +51,7 @@ const Projects = () => {
                         style={{ animationDelay: `${index * 0.15}s` }}
                     >
                         <div className="project-header">
-                            <h2>{project.icon} {project.title}</h2>
+                            <h2>{project.title}</h2>
                         </div>
                         <div className="project-description">
                             <p>{project.description}</p>
@@ -66,7 +63,8 @@ const Projects = () => {
                         </div>
                         <div className="project-date">{project.date}</div>
                         <div className="author-customer">
-                            <h1>author - {project.author}, customer - {project.customer}</h1>
+                            <h1>project author - {project.author}</h1> 
+                            <h1>customer - {project.customer}</h1>
                         </div>
                     </div>
                 ))}
