@@ -1,19 +1,21 @@
+/* LIGHT AND DARK THEME OVERRIDES */
 body.dark .about-container {
     --bg-gradient: linear-gradient(135deg, #2e2e2e, #1a1a1a);
+    --card-bg: #1f1f1f;
+    --text-color: #ddd;
+    --section-bg: #292929;
+    --info-bg: #2f2f2f;
 }
 
 body:not(.dark) .about-container {
-    --bg-gradient: linear-gradient(135deg, #6e8efb, #a777e3);
+    --bg-gradient: linear-gradient(135deg, #f0f0f0, #812b2b);
+    --card-bg: #ffffff;
+    --text-color: #222;
+    --section-bg: #f9f9f9;
+    --info-bg: #ebebeb;
 }
+/*------------------------------*/
 
-body.dark {
-    --card-bg: #1e1e1e;
-    --text-color: #eee;
-    --info-bg: #2a2a2a;
-    --section-bg: #2a2a2a;
-}
-
-/* about page styles */
 .about-container {
     display: flex;
     justify-content: center;
@@ -51,12 +53,12 @@ body.dark {
 
 h1 {
     font-size: 24px;
-    color: #333;
+    color: var(--text-color);
 }
 
 .tagline {
     font-size: 14px;
-    color: #777;
+    color: var(--text-color);
     margin-bottom: 20px;
 }
 

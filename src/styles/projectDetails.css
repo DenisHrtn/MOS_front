@@ -1,12 +1,37 @@
-body.dark {
-    --card-bg: #1e1e1e;
-    --text-color: #eee;
-    --info-bg: #2a2a2a;
-    --section-bg: #2a2a2a;
+/* LIGHT THEME OVERRIDES */
+body:not(.dark) .projects-details-wrap, body:not(.dark) .project-not-found {
+    --card-bg: #ffffff;
+    --text-color: #222;
+    --section-bg: #f9f9f9f9;
+    --tag-bg: #e52e71;
+    --stack-bg: #e53e7b;
+    --date-color: #777;
+    --error-bg: #fff05f;
+    --error-text: #e52e71;
+    --error-subtext: #555;
+    --button-bg: red;
+    --button-hover: #c91f5e;
 }
+/*---------------------------*/
+
+/* DARK THEME (default) */
+:root {
+    --card-bg: #1c1c1c;
+    --text-color: #f5f5f5;
+    --section-bg: #2c2c2c;
+    --tag-bg: #e52e71;
+    --stack-bg: #e53e7b;
+    --date-color: #aaa;
+    --error-bg: #402a2f;
+    --error-text: #e52e71;
+    --error-subtext: #ccc;
+    --button-bg: red;
+    --button-hover: #c91f5e;
+}
+/*---------------------------*/
 
 .project-not-found {
-    background: #fff05f;
+    background: var(--error-bg);
     padding: 32px;
     border-radius: 16px;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
@@ -18,13 +43,13 @@ body.dark {
 
 .project-not-found h2 {
     font-size: 28px;
-    color: #e52e71;
+    color: var(--error-text);
     margin-bottom: 20px;
 }
 
 .project-not-found p {
     font-size: 18px;
-    color: #555;
+    color: var(--error-subtext);
     margin-bottom: 30px;
 }
 
@@ -32,7 +57,7 @@ body.dark {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background-color: red;
+    background-color: var(--button-bg);
     color: #fff;
     padding: 10px 18px;
     border-radius: 10px;
@@ -62,7 +87,7 @@ body.dark {
 .projects-details-wrap p {
     font-size: 18px;
     line-height: 1.6;
-    color: #444;
+    color: var(--text-color);
     margin-bottom: 24px;
 }
 
@@ -74,7 +99,7 @@ body.dark {
 }
 
 .project-details-tags .details-tag {
-    background-color: #e52e71;
+    background-color: var(--tag-bg);
     color: white;
     padding: 6px 14px;
     border-radius: 10px;
@@ -90,7 +115,7 @@ body.dark {
 }
 
 .project-details-stack .details-stack {
-    background-color: #e53e7b;
+    background-color: var(--stack-bg);
     color: white;
     padding: 4px 11px;
     font-size: 12px;
@@ -99,7 +124,7 @@ body.dark {
 
 .project-details-date {
     font-size: 16px;
-    color: #777;
+    color: var(--date-color);
     margin-bottom: 30px;
 }
 
@@ -107,7 +132,7 @@ body.dark {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background-color: red;
+    background-color: var(--button-bg);
     color: #fff;
     padding: 10px 18px;
     border-radius: 10px;
@@ -118,7 +143,7 @@ body.dark {
 }
 
 .back-button:hover {
-    background-color: #c91f5e;
+    background-color: var(--button-hover);
 }
 
 @keyframes fadeInUp {
