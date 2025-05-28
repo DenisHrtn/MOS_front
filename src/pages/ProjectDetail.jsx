@@ -70,20 +70,21 @@ const ProjectDetails = () => {
     return (
         <div className="projects-details-wrap">
             <h1>{project.icon} {project.name}</h1>
-            <h2>author - {project.author}, customer - {project.customer}</h2>
             <p>{project.description}</p>
-            <div className="project-details-tags">
-                {project.tags.map(tag => (
-                    <span key={tag} className="details-tag">{tag}</span>
-                ))}
-            </div>
+            <br/>   
+            <h2>project author - {project.author}</h2>
+            <h2>project customer - {project.customer}</h2>
             <div className="project-details-stack">
                 {project.stack.map(tag => (
                 <span key={tag} className="details-stack">{tag}</span>
                 ))}
             </div>
+            <div className="project-details-tags">
+                {project.tags.map(tag => (
+                    <span key={tag} className="details-tag">{tag}</span>
+                ))}
+            </div>
             <div className="project-details-date">{project.date}</div>
-            <br/>
             <Link to="/projects" className="back-button">
                 <span>Back</span>
             </Link>

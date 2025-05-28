@@ -64,7 +64,7 @@ const Projects = () => {
                         <div className="project-date">{project.date}</div>
                         <div className="author-customer">
                             <h1>project author - {project.author}</h1> 
-                            <h1>customer - {project.customer}</h1>
+                            <h1>project customer - {project.customer}</h1>
                         </div>
                     </div>
                 ))}
