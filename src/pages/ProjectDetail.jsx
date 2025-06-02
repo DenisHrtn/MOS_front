@@ -72,8 +72,8 @@ const ProjectDetails = () => {
             <h1>{project.icon} {project.name}</h1>
             <p>{project.description}</p>
             <br/>   
-            <h2>project author - {project.author}</h2>
-            <h2>project customer - {project.customer}</h2>
+            <h2>Project author - {project.author}</h2>
+            <h2>Project customer - {project.customer}</h2>
             <div className="project-details-stack">
                 {project.stack.map(tag => (
                 <span key={tag} className="details-stack">{tag}</span>

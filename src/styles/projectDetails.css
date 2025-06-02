@@ -76,6 +76,7 @@ body.dark {
     flex-wrap: wrap;
     gap: 15px;
     margin-bottom: 45px;
+    margin-top: 25px;
 }
 
 .project-details-tags .details-tag {
