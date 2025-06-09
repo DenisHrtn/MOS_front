@@ -2,7 +2,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: #2685ea;
+  background: 	#F5F0EA;
 }
 
 .container {
@@ -12,7 +12,7 @@ body {
 }
 
 header {
-  background: #007bff;
+  background: #FBEBCE;
   color: white;
   padding: 15px 0;
   text-align: center;
