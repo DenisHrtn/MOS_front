@@ -4,9 +4,7 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  /*background: linear-gradient(to bottom, #3b82f6, #6366f2);*/
-  /* НУЖНО ТЯНУТЬСЯ var'ы */
-  color: white;
+  color: #aa9c91;
   padding: 20px;
   text-align: center;
   font-family: 'Arial', sans-serif;
