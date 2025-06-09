@@ -57,7 +57,7 @@ const ProjectDetails = () => {
     if (!project) {
         return (
             <div className="project-not-found">
-                <h2>Проект не найден!</h2>
+                <h2>Проект не найден!!!</h2>
                 <p>Похоже, что такого проекта больше не существует или ссылка была неверной.</p>
                 <Link to="/projects" className="back-button">Назад к проектам</Link>
             </div>
