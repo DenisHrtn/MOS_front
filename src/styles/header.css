@@ -50,8 +50,9 @@
 }
 
 .theme-toggle {
-    margin-top: 15px;
-    margin-left: 72%;
+    margin-top: 1%;
+    position: absolute;
+    right: 3%;
     padding: 8px 15px;
     border: none;
     background: #7d7d7dc3;

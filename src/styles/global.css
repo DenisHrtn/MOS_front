@@ -7,9 +7,8 @@
   --section-bg: #f8f8f8f8;
   --link-color: #094746;
 }
-/*-------------------*/
 
-body.darl {
+body.dark {
   --bg-gradient: linear-gradient(135deg, #2e2e2e, #1a1a1a);
   --card-bg: #1e1e1e;
   --text-color: #eee;
