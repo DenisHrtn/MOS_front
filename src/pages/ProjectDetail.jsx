@@ -24,7 +24,6 @@ const projectsData = [
             "— Avant tout dites-moi, comment vous allez, chère amie? 5 Успокойте меня, — сказал он, не изменяя голоса и тоном, в котором из-за приличия и участия просвечивало равнодушие и даже насмешка.",
         tags: ['Python', 'Django'],
         date: "2024-05-14",
-        icon: "☎️",
         stack: ['JSX','React'],
         author: ['David'],
         customer:['MR. Beast']
@@ -35,7 +34,6 @@ const projectsData = [
         description: "Test project",
         tags: ['JS'],
         date: "2024-07-31",
-        icon: "🤳",
         stack: ['JSX'],
         author: ['Denis'],
         customer: ['Zeus']
@@ -46,7 +44,6 @@ const projectsData = [
         description: "Test project",
         tags: ['Python', 'JS'],
         date: "2024-06-01",
-        icon: "📟",
         stack: ['JSX','React','FastAPI'],
         author: ['Pavel'],
         customer: ['Freya']
@@ -60,7 +57,7 @@ const ProjectDetails = () => {
     if (!project) {
         return (
             <div className="project-not-found">
-                <h2>Проект не найден!</h2>
+                <h2>Проект не найден!!!</h2>
                 <p>Похоже, что такого проекта больше не существует или ссылка была неверной.</p>
                 <Link to="/projects" className="back-button">Назад к проектам</Link>
             </div>
@@ -69,21 +66,23 @@ const ProjectDetails = () => {
 
     return (
         <div className="projects-details-wrap">
-            <h1>{project.icon} {project.name}</h1>
-            <h2>author - {project.author}, customer - {project.customer}</h2>
+            <h1>{project.name}</h1>
             <p>{project.description}</p>
+            <br/>   
+            <h3>Project author - {project.author}</h3>
+            <h3>Project customer - {project.customer}</h3>
+            <div className="project-details-stack">
+                <strong>Стек:&nbsp;</strong>
+                {project.stack.map(tech => (
+                <span key={tech} className="details-stack">{tech}</span>
+                ))}
+            </div>
             <div className="project-details-tags">
                 {project.tags.map(tag => (
                     <span key={tag} className="details-tag">{tag}</span>
                 ))}
             </div>
-            <div className="project-details-stack">
-                {project.stack.map(tag => (
-                <span key={tag} className="details-stack">{tag}</span>
-                ))}
-            </div>
             <div className="project-details-date">{project.date}</div>
-            <br/>
             <Link to="/projects" className="back-button">
                 <span>Back</span>
             </Link>

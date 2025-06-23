@@ -1,5 +1,5 @@
 .header {
-  background: #2685ea;
+  background: #ECE5DD;
   color: white;
   padding: 20px;
   width: 100%;
@@ -19,7 +19,7 @@
 }
 
 .header nav a {
-  color: white;
+  color: #83786F;
   text-decoration: none;
   margin: 30px 15px 10px 0px;
   font-weight: bold;
@@ -27,7 +27,7 @@
 }
 
 .header nav a:hover {
-  color: #bacbdf;
+  color: #3B322A;
 }
 
 .header .ADlink a {
@@ -46,12 +46,13 @@
 }
 
 .header .ADlink a:hover {
-  color: #696969;
+  color: #3B322A;
 }
 
 .theme-toggle {
-    margin-top: 15px;
-    margin-left: 72%;
+    margin-top: 1%;
+    position: absolute;
+    right: 3%;
     padding: 8px 15px;
     border: none;
     background: #7d7d7dc3;

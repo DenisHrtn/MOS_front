@@ -4,7 +4,7 @@ body:not(.dark) .projects-details-wrap, body:not(.dark) .project-not-found {
     --text-color: #222;
     --section-bg: #f9f9f9f9;
     --tag-bg: #e52e71;
-    --stack-bg: #e53e7b;
+    --stack-bg: #c39e36;
     --date-color: #777;
     --error-bg: #fff05f;
     --error-text: #e52e71;
@@ -20,7 +20,7 @@ body:not(.dark) .projects-details-wrap, body:not(.dark) .project-not-found {
     --text-color: #f5f5f5;
     --section-bg: #2c2c2c;
     --tag-bg: #e52e71;
-    --stack-bg: #e53e7b;
+    --stack-bg: #c39e36;
     --date-color: #aaa;
     --error-bg: #402a2f;
     --error-text: #e52e71;
@@ -109,8 +109,9 @@ body:not(.dark) .projects-details-wrap, body:not(.dark) .project-not-found {
 
 .project-details-stack {
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 8px;
     margin-bottom: 20px;
 }
 
@@ -126,6 +127,7 @@ body:not(.dark) .projects-details-wrap, body:not(.dark) .project-not-found {
     font-size: 16px;
     color: var(--date-color);
     margin-bottom: 30px;
+    margin-top: 15px;
 }
 
 .back-button {

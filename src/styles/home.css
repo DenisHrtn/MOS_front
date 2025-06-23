@@ -1,12 +1,23 @@
+body:not(.dark) .typing-text{ 
+  --tt-color:  #0a0808;
+}
+
+body:not(.dark) .home-container {
+  --second-text-color: #6a5e55;
+}
+
+:root {
+  --tt-color: #a59a91;
+  --second-text-color: #f4efeb;
+}
+
 .home-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  /*background: linear-gradient(to bottom, #3b82f6, #6366f2);*/
-  /* НУЖНО ТЯНУТЬСЯ var'ы */
-  color: white;
+  color: var(--second-text-color);
   padding: 20px;
   text-align: center;
   font-family: 'Arial', sans-serif;
@@ -19,6 +30,7 @@
   white-space: nowrap;
   overflow: hidden;
   width: fit-content;
+  color: var(--tt-color);
 }
 
 .fade-in {
@@ -32,10 +44,6 @@
   animation-delay: 0.5s;
 }
 
-.delay-2 {
-  animation-delay: 1s;
-}
-
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -45,4 +53,38 @@
     opacity: 1;
     transform: translateY(0)
   }
+}
+
+.all-facts {
+  margin-top: 55px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.all-facts button {
+  background-color: #333;
+  width: 300px;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.all-facts button:hover {
+  background-color: #444444;
+}
+
+.faq-answer {
+  background-color: #444444;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  width: 350px;
+  animation: fadeInUp 0.5s ease forwards;
+  align-items: center;
 }
