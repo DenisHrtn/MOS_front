@@ -69,11 +69,12 @@ const ProjectDetails = () => {
             <h1>{project.name}</h1>
             <p>{project.description}</p>
             <br/>   
-            <h2>Project author - {project.author}</h2>
-            <h2>Project customer - {project.customer}</h2>
+            <h3>Project author - {project.author}</h3>
+            <h3>Project customer - {project.customer}</h3>
             <div className="project-details-stack">
-                {project.stack.map(tag => (
-                <span key={tag} className="details-stack">{tag}</span>
+                <strong>Стек:&nbsp;</strong>
+                {project.stack.map(tech => (
+                <span key={tech} className="details-stack">{tech}</span>
                 ))}
             </div>
             <div className="project-details-tags">
