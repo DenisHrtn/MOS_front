@@ -1,22 +1,37 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
 
 const Home = () => {
     const text = 'Welcome to my portfolio';
     const [displayedText, setDisplayedText] = useState('');
     const [index, setIndex] = useState(0);
-
+    const [showBorder, setShowBorder] = useState(true);
     const [activeQuestion, setActiveQuestion] = useState(null);
 
     useEffect(() => {
         if (index < text.length) {
             const timeout = setTimeout(() => {
-                setDisplayedText((prev) => prev + text[index]);
-                setIndex(index + 1);
+                setDisplayedText((prev) => prev + text.charAt(index));
+
+                // Сперва увеличим индекс
+                setIndex((prevIndex) => {
+                    const newIndex = prevIndex + 1;
+
+                    // Проверка после увеличения
+                    if (newIndex === 11) { // потому что index увеличивается *после* добавления символа
+                        setShowBorder(false);
+                        setTimeout(() => {
+                            setShowBorder(true);
+                        }, 300); // на сколько миллисекунд убрать бордер
+                    }
+
+                    return newIndex;
+                });
             }, 150);
+
             return () => clearTimeout(timeout);
         }
     }, [index, text]);
-
+    
     const toggleQuestion = (id) => {
         setActiveQuestion(activeQuestion === id ? null : id);
     };

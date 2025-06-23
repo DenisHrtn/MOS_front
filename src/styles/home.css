@@ -88,3 +88,13 @@ body:not(.dark) .home-container {
   animation: fadeInUp 0.5s ease forwards;
   align-items: center;
 }
+
+@keyframes blink-border {
+  0% { border-right-color: white; }
+  50% { border-right-color: transparent; }
+  100% { border-right-color: white; }
+}
+
+.blinking-border {
+  animation: blink-border 1s step-start infinite;
+}
