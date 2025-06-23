@@ -5,6 +5,8 @@ import About from "./pages/About";
 import Contacts from "./pages/Contacts";
 import Projects from "./pages/Projects";
 import ProjectDetail from "./pages/ProjectDetail";
+import FAQ from './ components/FAQ';
+import "./styles/faq.css";
 import "./styles/global.css";
 import "./styles/header.css";
 import "./styles/footer.css";
@@ -43,9 +45,14 @@ const Header = () => {
 
 
 const Footer = () => (
-    <footer className="footer">
-      <p>2025 My Own Site. All Rights Reserved.</p>
-    </footer>
+  <footer className="footer">
+    <div className="footer-inner">
+      <div className="faq-wrapper">
+        <FAQ />
+      </div>
+      <p className="footer-copy">© 2025 My Own Site. All Rights Reserved.</p>
+    </div>
+  </footer>
 );
 
 const App = () => {

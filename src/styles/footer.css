@@ -1,6 +1,27 @@
 .footer {
-  background: linear-gradient(130deg, #222, #555555);
-  color: white;
-  text-align: center;
-  padding: 15px 0;
+  background-color: #1c1c1c;
+  color: #ddd;
+  padding: 30px 40px;
+  font-size: 0.95em;
 }
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.faq-wrapper {
+  max-width: 300px;
+}
+
+.footer-copy {
+  margin-left: auto;
+  margin-right: 40px;
+  font-size: 0.85em;
+  color: #aaa;
+  text-align: right;
+}
+
