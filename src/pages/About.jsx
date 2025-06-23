@@ -9,13 +9,11 @@ const About = () => {
                 <p className="tagline">Back-end developer | Kickboxer</p>
 
                 <div className="info-grid">
-                    <div className="info-item"><span>Age: </span><p>16</p></div>
-                    <div className="info-item"><span>Birthday: </span><p>24/01/2009</p></div>
+                    <div className="info-item"><span>Birthday: </span><p>24 January</p></div>
                     <div className="info-item"><span>Gender: </span><p>Male</p></div>
-                    <div className="info-item"><span>Address: </span><p>Agtrupvej 40</p></div>
-                    <div className="info-item"><span>Hobby: </span><p>Kickboxing</p></div>
-                    <div className="info-item"><span>Native language: </span><p>Russian</p></div>
-                    <div className="info-item"><span>Second language: </span><p>Ukrainian</p></div>
+                    <div className="info-item"><span>Country: </span><p>Denmark</p></div>
+                    <div className="info-item"><span>Native language: </span><p>Ukrainian</p></div>
+                    <div className="info-item"><span>Second language: </span><p>Russian</p></div>
                 </div>
 
                 <div className="skills">
