@@ -82,9 +82,31 @@ body:not(.dark) .home-container {
 .faq-answer {
   background-color: #444444;
   color: #fff;
+  margin-top: 5px;
   padding: 10px 20px;
   border-radius: 10px;
   width: 350px;
   animation: fadeInUp 0.5s ease forwards;
   align-items: center;
+}
+
+.faq-answer_one {
+  align-items: center;
+  position: absolute;
+  top: 300px;
+  left: 150px;
+}
+
+.faq-answer_two {
+  align-items: center;
+  position: absolute;
+  top: 400px;
+  left: 1200px;
+}
+
+.faq-answer_three {
+  align-items: center;
+  position: absolute;
+  top: 750px;
+  left: 450px;
 }
