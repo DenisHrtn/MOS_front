@@ -110,3 +110,16 @@ body:not(.dark) .home-container {
   top: 750px;
   left: 450px;
 }
+
+@keyframes blink {
+  0%, 100% {
+    border-right-color: white;
+  }
+  50% {
+    border-right-color: transparent;
+  }
+}
+
+.blink-border {
+  animation: blink 1s step-end infinite;
+}
