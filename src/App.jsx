@@ -1,11 +1,11 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Contacts from "./pages/Contacts";
-import Projects from "./pages/Projects";
-import ProjectDetail from "./pages/ProjectDetail";
-import Footer from "./ components/Footer";
-import Header from "./ components/Header";
+import Home from "./pages/Home/Home";
+import About from "./pages/About/About";
+import Contacts from "./pages/Contacts/Contacts";
+import Projects from "./pages/Projects/Projects";
+import ProjectDetail from "./pages/ProjectDetails/ProjectDetail";
+import Footer from "./ components/Footer/Footer";
+import Header from "./ components/Header/Header";
 import "./styles/faq.css";
 import "./styles/global.css";
 import "./styles/header.css";

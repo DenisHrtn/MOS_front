@@ -1,6 +1,6 @@
 import React, {useContext} from "react";
 import { Link } from "react-router-dom";
-import {ThemeContext} from "../ThemeContext";
+import {ThemeContext} from "../../ThemeContext";
 
 const Header = () => {
     const { darkMode, setDarkMode } = useContext(ThemeContext);
