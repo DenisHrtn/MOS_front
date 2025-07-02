@@ -82,6 +82,7 @@ body:not(.dark) .home-container {
 .faq-answer {
   background-color: #444444;
   color: #fff;
+  margin-top: 5px;
   padding: 10px 20px;
   border-radius: 10px;
   width: 350px;
@@ -89,12 +90,23 @@ body:not(.dark) .home-container {
   align-items: center;
 }
 
-@keyframes blink-border {
-  0% { border-right-color: white; }
-  50% { border-right-color: transparent; }
-  100% { border-right-color: white; }
+.faq-answer_one {
+  align-items: center;
+  position: absolute;
+  top: 300px;
+  left: 150px;
 }
 
-.blinking-border {
-  animation: blink-border 1s step-start infinite;
+.faq-answer_two {
+  align-items: center;
+  position: absolute;
+  top: 400px;
+  left: 1200px;
+}
+
+.faq-answer_three {
+  align-items: center;
+  position: absolute;
+  top: 750px;
+  left: 450px;
 }
