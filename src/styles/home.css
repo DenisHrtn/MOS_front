@@ -58,7 +58,6 @@ body:not(.dark) .home-container {
 .all-facts {
   margin-top: 55px;
   display: flex;
-  flex-direction: column;
   gap: 15px;
   align-items: center;
 }
@@ -79,7 +78,7 @@ body:not(.dark) .home-container {
   background-color: #444444;
 }
 
-.faq-answer {
+.fact_answer_one {
   background-color: #444444;
   color: #fff;
   margin-top: 5px;
@@ -90,21 +89,43 @@ body:not(.dark) .home-container {
   align-items: center;
 }
 
-.faq-answer_one {
+.fact_answer_two {
+  background-color: #444444;
+  color: #fff;
+  margin-top: 5px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  width: 350px;
+  animation: fadeInUp 0.5s ease forwards;
+  align-items: center;
+}
+
+.fact_answer_three {
+  background-color: #444444;
+  color: #fff;
+  margin-top: 5px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  width: 350px;
+  animation: fadeInUp 0.5s ease forwards;
+  align-items: center;
+}
+
+.fact_one {
   align-items: center;
   position: absolute;
   top: 300px;
   left: 150px;
 }
 
-.faq-answer_two {
+.fact_two {
   align-items: center;
   position: absolute;
   top: 400px;
   left: 1200px;
 }
 
-.faq-answer_three {
+.fact_three {
   align-items: center;
   position: absolute;
   top: 750px;

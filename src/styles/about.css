@@ -8,13 +8,12 @@ body.dark .about-container {
 }
 
 body:not(.dark) .about-container {
-    --bg-gradient: linear-gradient(135deg, #f0f0f0, #812b2b);
-    --card-bg: #ffffff;
+    --bg-gradient: linear-gradient(135deg, #f0f0f0, #b8ac9e);
+    --card-bg: #f6f4f1;
     --text-color: #222;
-    --section-bg: #f9f9f9;
-    --info-bg: #ebebeb;
+    --section-bg: #e9e3de;
+    --info-bg: #ede9e4;
 }
-/*------------------------------*/
 
 .about-container {
     display: flex;
