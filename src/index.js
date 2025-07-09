@@ -4,11 +4,6 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-import "./styles/global.css"
-import "./styles/header.css"
-import "./styles/footer.css"
-import "./styles/home.css"
-import "./styles/contacts.css"
 import { ThemeProvider } from "./ThemeContext";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
