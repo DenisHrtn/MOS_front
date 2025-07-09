@@ -6,15 +6,15 @@ import Projects from "./pages/Projects/Projects";
 import ProjectDetails from "./pages/ProjectDetails/ProjectDetails";
 import Footer from "./ components/Footer/Footer";
 import Header from "./ components/Header/Header";
-import "./styles/faq.css";
-import "./styles/global.css";
-import "./styles/header.css";
-import "./styles/footer.css";
-import "./styles/home.css"
-import "./styles/about.css"
-import "./styles/contacts.css"
-import "./styles/projects.css"
-import "./styles/projectDetails.css"
+import "./ components/FAQ/faq.css";
+import "./global.css";
+import "./ components/Header/header.css";
+import "./ components/Footer/footer.css";
+import "./pages/Home/home.css";
+import "./pages/About/about.css";
+import "./pages/Contacts/contacts.css";
+import "./pages/Projects/projects.css";
+import "./pages/ProjectDetails/projectDetails.css";
 
 const App = () => {
   return (

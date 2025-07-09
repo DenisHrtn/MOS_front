@@ -1,13 +1,15 @@
 body:not(.dark) .projects-grid {
-    --card-bg: #eadfd2;
-    --card-hover: #ECE5DD;
+    --card-bg: #f6f4f1;
+    --card-hover: #eeebe7;
     --heder-h2: #2c3e50;
+    --description-p: #2c3e50;
 }
 
 :root {
     --card-bg: #272727;
     --card-hover: #303030;
-    --heder-h2: #3c3c3c;
+    --heder-h2: #6f6f6f;
+    --description-p: #6f6f6f;
 }
 
 .projects-wrap {
@@ -104,7 +106,7 @@ body:not(.dark) .projects-grid {
 
 .project-description p {
     font-size: 24px;
-    color: #2c3e50;
+    color: var(--description-p);
     margin: 0;
     font-weight: 600;
 }

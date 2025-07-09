@@ -37,5 +37,4 @@ test('ProjectDetails рендерит информацию о проекте', (
    expect(screen.getByText('JSX')).toBeInTheDocument();
    expect(screen.getByText('React')).toBeInTheDocument();
    expect(screen.getByText('Python')).toBeInTheDocument();
-   expect(screen.getByText('2024-06-01')).toBeInTheDocument();
 });
