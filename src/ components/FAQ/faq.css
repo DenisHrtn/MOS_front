@@ -1,34 +1,67 @@
 .faq-compact {
-  max-width: 700px;
+  max-width: 800px;
   margin: 0 auto;
-  padding: 10px 0;
-  font-size: 0.9em;
+  padding: 20px;
   color: #ddd;
+  font-size: 1em;
 }
 
 .faq-compact h4 {
   text-align: center;
-  margin-bottom: 5px;
+  margin-bottom: 20px;
   color: #fff;
+  font-size: 2em;
 }
 
-.faq-line {
-  margin-bottom: 5px;
+.faq-block {
+  background-color: #2a2a2a;
+  border-radius: 12px;
+  padding: 16px 20px;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 0 transparent;
 }
 
-.faq-compact-question {
+.faq-block.open {
+  background-color: #333;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.faq-question {
   background: none;
   border: none;
-  color: #ccc;
+  color: #fff;
   cursor: pointer;
+  font-size: 1.2em;
+  font-weight: bold;
   width: 100%;
   text-align: left;
-  padding: 4px 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.2s ease;
 }
 
-.faq-compact-answer {
-  margin-left: 12px;
-  padding: 3px 0;
-  color: #aaa;
-  font-size: 0.85em;
+.faq-question:hover {
+  color: #00bfff;
 }
+
+.arrow {
+  display: inline-block;
+  transition: transform 0.3s ease;
+  font-size: 0.7em;
+}
+
+.faq-answer-wrapper {
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.faq-answer {
+  margin-top: 10px;
+  color: #ccc;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+

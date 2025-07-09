@@ -7,21 +7,17 @@
 
 .footer-inner {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   gap: 20px;
+  text-align: center;
 }
 
-.faq-wrapper {
-  max-width: 300px;
-}
 
 .footer-copy {
-  margin-left: auto;
-  margin-right: 40px;
+  text-align: center;
   font-size: 0.85em;
   color: #aaa;
-  text-align: right;
 }
 
