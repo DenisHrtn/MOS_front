@@ -4,7 +4,6 @@ const Home = () => {
     const text = 'Welcome to my portfolio';
     const [displayedText, setDisplayedText] = useState('');
     const [index, setIndex] = useState(0);
-    const [activeQuestion, setActiveQuestion] = useState(null);
     const [doneTyping, setDoneTyping] = useState(false);
 
     useEffect(() => {
@@ -18,10 +17,6 @@ const Home = () => {
         }
     }, [index, text]);
 
-    const toggleQuestion = (id) => {
-        setActiveQuestion(activeQuestion === id ? null : id);
-    };
-
     return (
         <div className="home-container">
             <h1 className={`typing-text ${doneTyping ? 'blink-border' : ''}`}>{displayedText}</h1>
@@ -31,21 +26,6 @@ const Home = () => {
             <p className="fade-in delay-1">
                 This site was written using the following programming languages: JavaScript, Python. and contains information about David Antropov.
             </p>
-
-            <div className="all-facts">
-                <div  className='fact_one'>
-                    <button onClick={() => toggleQuestion(1)}>время потраченное на создание сайта</button>
-                    {activeQuestion === 1 && <div className="fact_answer_one">на данный момент потраченно около полугода</div>}
-                </div>
-                <div className='fact_two'>
-                    <button onClick={() => toggleQuestion(2)}>история создания сайта</button>
-                    {activeQuestion === 2 && <div className="fact_answer_two">изначально сайт создавался для школьного проекта однако со временем переписался под портфолио</div>}
-                </div>
-                <div>
-                    <button onClick={() => toggleQuestion(3)}>Создатели сайта</button>
-                    {activeQuestion === 3 && <div className="fact_answer_three">Денис Харитончик, Давид Антропов</div>}
-                </div>
-            </div>
         </div>
     );
 };
