@@ -9,8 +9,8 @@ test('About rendering information about user', () => {
      </MemoryRouter>
    );
 
-   expect(screen.getByText('antropovdavid85@gmail.com')).toBeInTheDocument();
-   expect(screen.getByText('Username: P.E.R.O.G')).toBeInTheDocument();
+   expect(screen.getByText('test@gmail.com')).toBeInTheDocument();
+   expect(screen.getByText('Username: TEST')).toBeInTheDocument();
    expect(screen.getByText('Github')).toBeInTheDocument();
    expect(screen.getByText('LinkedIn')).toBeInTheDocument();
 });
