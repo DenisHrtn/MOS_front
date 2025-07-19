@@ -1,8 +1,8 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
 
-    
-const projectsData = [
+
+const portfolioData = [
     {
         id: 1,
         name: "Test",
@@ -25,8 +25,8 @@ const projectsData = [
         tags: ['Python', 'Django'],
         date: "2024-05-14",
         stack: ['JSX','React'],
-        author: ['David'],
-        customer:['MR. Beast']
+        author: ['Bub'],
+        customer:['Luntic']
     },
     {
         id: 2,
@@ -35,7 +35,7 @@ const projectsData = [
         tags: ['JS'],
         date: "2024-07-31",
         stack: ['JSX'],
-        author: ['Denis'],
+        author: ['Spider-Men'],
         customer: ['Zeus']
     },
     {
@@ -45,30 +45,30 @@ const projectsData = [
         tags: ['Python', 'JS'],
         date: "2024-06-01",
         stack: ['JSX','React','FastAPI'],
-        author: ['Pavel'],
-        customer: ['Freya']
+        author: ['Spider-Men'],
+        customer: ['Venom']
     }
 ];
 
-const ProjectDetails = () => {
+const PortfolioProject = () => {
     const { id } = useParams();
-    const project = projectsData.find(p => p.id === parseInt(id));
+    const project = portfolioData.find(p => p.id === parseInt(id));
 
     if (!project) {
         return (
             <div className="project-not-found">
-                <h2>Проект не найден!!!</h2>
-                <p>Похоже, что такого проекта больше не существует или ссылка была неверной.</p>
-                <Link to="/projects" className="back-button">Назад к проектам</Link>
+                <h2>404 Error</h2>
+                <p>Возможно Вы ошиблись. Проверьте правильность ссылки.</p>
+                <Link to="/portfolio" className="back-button">Вернуться назад</Link>
             </div>
         )
     }
 
     return (
-        <div className="projects-details-wrap">
+        <div className="portfolio-details-wrap">
             <h1>{project.name}</h1>
             <p>{project.description}</p>
-            <br/>   
+            <br/>
             <h3>Project author - {project.author}</h3>
             <h3>Project customer - {project.customer}</h3>
             <div className="project-details-stack">
@@ -83,11 +83,11 @@ const ProjectDetails = () => {
                 ))}
             </div>
             <div className="project-details-date">{project.date}</div>
-            <Link to="/projects" className="back-button">
+            <Link to="/portfolio" className="back-button">
                 <span>Back</span>
             </Link>
         </div>
     )
 }
 
-export default ProjectDetails;
+export default PortfolioProject;

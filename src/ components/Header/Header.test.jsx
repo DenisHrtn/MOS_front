@@ -21,7 +21,7 @@ test('Header рендерит ссылки и переключатель тем�
    expect(screen.getByText('Home')).toBeInTheDocument();
    expect(screen.getByText('About')).toBeInTheDocument();
    expect(screen.getByText('Contacts')).toBeInTheDocument();
-   expect(screen.getByText('Projects')).toBeInTheDocument();
+   expect(screen.getByText('Portfolio')).toBeInTheDocument();
 
    // тесты кнопки переключения темы
    const toggleBtn = screen.getByRole('button', { name: /toggle theme/i });
