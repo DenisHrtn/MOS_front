@@ -8,8 +8,8 @@ const projectsData = [
         description: "Test project",
         tags: ['Python', 'Django'],
         date: "2024-05-14",
-        author: ['David'],
-        customer:['MR. Beast']
+        author: ['Bub'],
+        customer:['Luntic']
     },
     {
         id: 2,
@@ -17,7 +17,7 @@ const projectsData = [
         description: "Test project",
         tags: ['React', 'JS'],
         date: "2024-07-31",
-        author: ['Denis'],
+        author: ['Spider-Men'],
         customer: ['Zeus']
     },
     {
@@ -26,8 +26,8 @@ const projectsData = [
         description: "Test project",
         tags: ['Python', 'FastAPI'],
         date: "2024-06-01",
-        author: ['Pavel'],
-        customer: ['Freya']
+        author: ['Spider-Men'],
+        customer: ['Venom']
     }
 ];
 

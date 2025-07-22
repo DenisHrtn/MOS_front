@@ -12,5 +12,5 @@ test('About rendering information about user', () => {
    expect(screen.getByText('Native language:')).toBeInTheDocument();
    expect(screen.getByText('Second language:')).toBeInTheDocument();
    expect(screen.getByText('Experience')).toBeInTheDocument();
-   expect(screen.getByText('Back-end developer | Kickboxer')).toBeInTheDocument();
+   expect(screen.getByText('Alien')).toBeInTheDocument();
 });

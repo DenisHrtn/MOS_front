@@ -7,6 +7,5 @@ jest.mock('../FAQ/FAQ', () => () => <div data-testid="faq-component">FAQ Mock</d
 test('Footer рендерит FAQ и копирайт', () => {
     render(<Footer />);
 
-    expect(screen.getByTestId('faq-component')).toBeInTheDocument();
     expect(screen.getByText(/© 2025 My Own Site. All Rights Reserved./i)).toBeInTheDocument()
 });

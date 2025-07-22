@@ -22,10 +22,10 @@ const Home = () => {
         <div className="home-container">
             <h1 className={`typing-text ${doneTyping ? 'blink-border' : ''}`}>{displayedText}</h1>
             <p className="fade-in">
-                This site was created as a portfolio for David Antropov. The site allows you to choose a service and order it.
+                This site was created as a portfolio for Test Some. The site allows you to choose a service and order it.
             </p>
             <p className="fade-in delay-1">
-                This site was written using the following programming languages: JavaScript, Python. and contains information about David Antropov.
+                This site was written using the following programming languages: JavaScript, Python. and contains information about Test Some.
             </p>
             <TimeLine />
         </div>

@@ -5,15 +5,15 @@ const About = () => {
         <div className={"about-container"}>
             <div className="profile-cart">
                 <img src="/images/img.png" alt="Profile" className="profile-pic" />
-                <h1>David Antropov</h1>
-                <p className="tagline">Back-end developer | Kickboxer</p>
+                <h1>Test Some</h1>
+                <p className="tagline">Alien</p>
 
                 <div className="info-grid">
-                    <div className="info-item"><span>Birthday: </span><p>24 January</p></div>
+                    <div className="info-item"><span>Birthday: </span><p>00 Jan</p></div>
                     <div className="info-item"><span>Gender: </span><p>Male</p></div>
-                    <div className="info-item"><span>Country: </span><p>Denmark</p></div>
-                    <div className="info-item"><span>Native language: </span><p>Ukrainian</p></div>
-                    <div className="info-item"><span>Second language: </span><p>Russian</p></div>
+                    <div className="info-item"><span>Country: </span><p>Moon</p></div>
+                    <div className="info-item"><span>Native language: </span><p>Something</p></div>
+                    <div className="info-item"><span>Second language: </span><p>Something</p></div>
                 </div>
 
                 <div className="skills">

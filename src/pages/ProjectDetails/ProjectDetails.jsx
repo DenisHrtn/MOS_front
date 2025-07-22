@@ -25,8 +25,8 @@ const projectsData = [
         tags: ['Python', 'Django'],
         date: "2024-05-14",
         stack: ['JSX','React'],
-        author: ['David'],
-        customer:['MR. Beast']
+        author: ['Bub'],
+        customer:['Luntic']
     },
     {
         id: 2,
@@ -35,7 +35,7 @@ const projectsData = [
         tags: ['JS'],
         date: "2024-07-31",
         stack: ['JSX'],
-        author: ['Denis'],
+        author: ['Spider-Men'],
         customer: ['Zeus']
     },
     {
@@ -45,8 +45,8 @@ const projectsData = [
         tags: ['Python', 'JS'],
         date: "2024-06-01",
         stack: ['JSX','React','FastAPI'],
-        author: ['Pavel'],
-        customer: ['Freya']
+        author: ['Spider-Men'],
+        customer: ['Venom']
     }
 ];
 
