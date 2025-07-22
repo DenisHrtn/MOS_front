@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import TimeLine from '../../ components/TimeLine/TimeLine';
 
 const Home = () => {
     const text = 'Welcome to my portfolio';
@@ -26,6 +27,7 @@ const Home = () => {
             <p className="fade-in delay-1">
                 This site was written using the following programming languages: JavaScript, Python. and contains information about David Antropov.
             </p>
+            <TimeLine />
         </div>
     );
 };

@@ -1,0 +1,81 @@
+.main-line {
+  position: relative;
+  bottom: 300px;
+  width: 1100px;
+  height: 3px;
+  background: #ffffff;
+  border-radius: 3px;
+  align-items: center;
+}
+
+.first-period {
+  position: absolute;
+  bottom: -10px;
+  width: 5px;
+  height: 23px;
+  background: #ffffff;
+  border-radius: 3px;
+}
+
+.second-period {
+  position: absolute;
+  bottom: -10px;
+  left: 365px;
+  width: 5px;
+  height: 23px;
+  background: #ffffff;
+  border-radius: 3px;
+}
+
+.third-period {
+  position: absolute;
+  bottom: -10px;
+  left: 730px;
+  width: 5px;
+  height: 23px;
+  background: #ffffff;
+  border-radius: 3px;
+}
+
+.fourth-period {
+  position: absolute;
+  bottom: -10px;
+  left: 1099px;
+  width: 5px;
+  height: 23px;
+  background: #ffffff;
+  border-radius: 3px;
+}
+
+.first-period:hover {
+  background: #dfdfdf;
+  width: 7px;
+  height: 33px;
+  bottom: -15px;
+  left: -1px;
+}
+
+.second-period:hover {
+  background: #dfdfdf;
+  width: 7px;
+  height: 33px;
+  bottom: -15px;
+  left: 364px;
+}
+
+.third-period:hover {
+  background: #dfdfdf;
+  width: 7px;
+  height: 33px;
+  bottom: -15px;
+  left: 729px;
+}
+
+.fourth-period:hover {
+  background: #dfdfdf;
+  width: 7px;
+  height: 33px;
+  bottom: -15px;
+  left: 1098px;
+}
+
