@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import { MemoryRouter, Route, Routes } from "react-router-dom";
-import ProjectDetails from "./ProjectDetails";
+import PortfolioProject from "./PortfolioProject";
 
 const projectsData = [
     {
@@ -25,11 +25,11 @@ const projectsData = [
     }
 ];
 
-test('ProjectDetails рендерит информацию о проекте', () => {
+test('PortfolioProject рендерит информацию о проекте', () => {
    render(
-       <MemoryRouter initialEntries={['/projects/1']}>
+       <MemoryRouter initialEntries={['/portfolio/project/1']}>
            <Routes>
-               <Route path="/projects/:id" element={<ProjectDetails />} />
+               <Route path="/portfolio/project/:id" element={<PortfolioProject />} />
            </Routes>
        </MemoryRouter>
    );
