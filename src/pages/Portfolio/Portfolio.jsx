@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate} from "react-router-dom";
 
-const projectsData = [
+const portfolioData = [
     {
         id: 1,
         title: "First",
@@ -31,19 +31,19 @@ const projectsData = [
     }
 ];
 
-const Projects = () => {
+const Portfolio = () => {
     const navigate = useNavigate();
 
     const openProject = (id) => {
-        navigate(`/projects/${id}`);
+        navigate(`/portfolio/project/${id}`);
     }
 
 
     return (
-        <div className="projects-wrap">
-            <h1 className="projects-title">Projects</h1>
-            <div className="projects-grid">
-                {projectsData.map((project, index) => (
+        <div className="portfolio-wrap">
+            <h1 className="portfolio-title">Portfolio</h1>
+            <div className="portfolio-grid">
+                {portfolioData.map((project, index) => (
                     <div
                         key={project.id}
                         className="project-card"
@@ -73,4 +73,4 @@ const Projects = () => {
     )
 }
 
-export default Projects;
+export default Portfolio;
