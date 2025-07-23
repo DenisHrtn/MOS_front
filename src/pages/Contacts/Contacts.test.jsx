@@ -2,7 +2,7 @@ import { render, screen } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
 import Contacts from "./Contacts";
 
-test('About rendering information about user', () => {
+test('Contacts rendering user contacts', () => {
    render(
      <MemoryRouter>
        <Contacts />
