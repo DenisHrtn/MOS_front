@@ -1,82 +1,120 @@
+body.dark .main-line{
+    --main-line-bg: #fff;
+    --period-bg: #f4f4f4;
+}
+
+body:not(.dark) .main-line{
+    --main-line-bg: #bdaeaa;
+    --period-bg: #b1a39f;
+}
+
 .main-line {
   position: relative;
   bottom: 300px;
   width: 1100px;
   height: 3px;
-  background: #ffffff;
+  background: var(--main-line-bg);
   border-radius: 3px;
   align-items: center;
 }
 
 .first-period {
   position: absolute;
-  bottom: -10px;
-  width: 5px;
-  height: 23px;
-  background: #ffffff;
-  border-radius: 3px;
+  bottom: -7px;
+  width: 18px;
+  height: 18px;
+  background: var(--period-bg);
+  border-radius: 10px;
 }
 
 .second-period {
   position: absolute;
-  bottom: -10px;
   left: 365px;
-  width: 5px;
-  height: 23px;
-  background: #ffffff;
-  border-radius: 3px;
+  bottom: -7px;
+  width: 18px;
+  height: 18px;
+  background: var(--period-bg);
+  border-radius: 10px;
 }
 
 .third-period {
   position: absolute;
-  bottom: -10px;
   left: 730px;
-  width: 5px;
-  height: 23px;
-  background: #ffffff;
-  border-radius: 3px;
+  bottom: -7px;
+  width: 18px;
+  height: 18px;
+  background: var(--period-bg);
+  border-radius: 10px;
 }
 
 .fourth-period {
   position: absolute;
-  bottom: -10px;
   left: 1099px;
-  width: 5px;
-  height: 23px;
-  background: #ffffff;
-  border-radius: 3px;
+  bottom: -7px;
+  width: 18px;
+  height: 18px;
+  background: var(--period-bg);
+  border-radius: 10px;
 }
 
 .first-period:hover {
   background: #dfdfdf;
-  width: 7px;
-  height: 33px;
-  bottom: -15px;
-  left: -1px;
+  width: 22px;
+  height: 22px;
+  bottom: -9px;
+  left: -2px;
+  font-size: 17px;
 }
 
 .second-period:hover {
   background: #dfdfdf;
-  width: 7px;
-  height: 33px;
-  bottom: -15px;
-  left: 364px;
+  width: 22px;
+  height: 22px;
+  bottom: -9px;
+  left: 363px;
+  font-size: 17px;
 }
 
 .third-period:hover {
   background: #dfdfdf;
-  width: 7px;
-  height: 33px;
-  bottom: -15px;
-  left: 729px;
+  width: 22px;
+  height: 22px;
+  bottom: -9px;
+  left: 728px;
+  font-size: 17px;
 }
 
 .fourth-period:hover {
   background: #dfdfdf;
-  width: 7px;
-  height: 33px;
-  bottom: -15px;
-  left: 1098px;
+  width: 22px;
+  height: 22px;
+  bottom: -9px;
+  left: 1097px;
+  font-size: 17px;
+}
+
+.first-period p {
+  position: absolute;
+  bottom: 20px;
+  right: -35px;
+}
+
+.second-period p {
+  position: absolute;
+  bottom: 20px;
+  right: -35px;
+}
+
+.third-period p {
+  position: absolute;
+  bottom: 20px;
+  right: -35px;
+}
+
+.fourth-period p {
+  position: absolute;
+  bottom: 20px;
+  right: -35px;
 }
 
 .modal-overlay {

@@ -17,10 +17,18 @@ const TimeLine = () => {
     return (
         <div className='time-line'>
             <div className='main-line'>
-                <div className='first-period' onClick={() => handleClick("First period information")}></div>
-                <div className='second-period' onClick={() => handleClick("second period information")}></div>
-                <div className='third-period' onClick={() => handleClick("third period information")}></div>
-                <div className='fourth-period' onClick={() => handleClick("fourth period information")}></div>
+                <div className='first-period' onClick={() => handleClick("First period information")}>
+                    <p>first development period</p>
+                </div>
+                <div className='second-period' onClick={() => handleClick("second period information")}>
+                    <p>second development period</p>
+                </div>
+                <div className='third-period' onClick={() => handleClick("third period information")}>
+                    <p>third development period</p>
+                </div>
+                <div className='fourth-period' onClick={() => handleClick("fourth period information")}>
+                    <p>fourth development period</p>
+                </div>
             </div>
 
             {isModalOpen && (
