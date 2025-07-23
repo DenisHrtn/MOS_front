@@ -1,4 +1,4 @@
-body:not(.dark) .projects-grid {
+body:not(.dark) .portfolio-grid {
     --card-bg: #f6f4f1;
     --card-hover: #eeebe7;
     --heder-h2: #2c3e50;
@@ -12,13 +12,13 @@ body:not(.dark) .projects-grid {
     --description-p: #6f6f6f;
 }
 
-.projects-wrap {
+.portfolio-wrap {
     max-width: 1200px;
     margin: 50px auto;
     padding: 20px;
 }
 
-.projects-title {
+.portfolio-title {
     text-align: center;
     font-size: 42px;
     margin-bottom: 40px;
@@ -34,7 +34,7 @@ body:not(.dark) .projects-grid {
     margin-top: 15px;
 }
 
-.projects-grid {
+.portfolio-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 20px;
@@ -139,5 +139,3 @@ body:not(.dark) .projects-grid {
         opacity: 1;
     }
 }
-
-
