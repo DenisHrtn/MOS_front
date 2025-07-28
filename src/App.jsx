@@ -18,7 +18,7 @@ import "./pages/About/about.css";
 import "./pages/Contacts/contacts.css";
 import "./pages/Portfolio/portfolio.css";
 import "./pages/PortfolioProject/portfolioProject.css";
-
+import "./pages/FAQPage/FAQPage.css"
 
 
 const App = () => {
