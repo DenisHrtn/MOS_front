@@ -25,7 +25,8 @@ import pingBackend from "./pinger-back"
 const App = () => {
     useEffect(() => {
         pingBackend();
-        const interval = setInterval(pingBackend, 4 * 60 * 1000);
+
+        const interval = setInterval(pingBackend, 0.5 * 60 * 1000);
 
         return () => clearInterval(interval);
     }, []);
@@ -47,8 +48,6 @@ const App = () => {
     </Router>
   );
 };
-
-
 
 
 export default App;
