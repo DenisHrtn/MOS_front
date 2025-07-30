@@ -7,15 +7,18 @@ import Portfolio from "./pages/Portfolio/Portfolio";
 import PortfolioProject from "./pages/PortfolioProject/PortfolioProject";
 import Footer from "./ components/Footer/Footer";
 import Header from "./ components/Header/Header";
+import TimeLine from "./ components/TimeLine/TimeLine";
 import "./ components/FAQ/faq.css";
 import "./global.css";
 import "./ components/Header/header.css";
 import "./ components/Footer/footer.css";
+import "./ components/TimeLine/timeLine.css"
 import "./pages/Home/home.css";
 import "./pages/About/about.css";
 import "./pages/Contacts/contacts.css";
 import "./pages/Portfolio/portfolio.css";
 import "./pages/PortfolioProject/portfolioProject.css";
+import "./pages/FAQPage/FAQPage.css"
 
 
 const App = () => {
