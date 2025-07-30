@@ -1,0 +1,12 @@
+body.dark .faq-page{
+    --f-page-h3: #fff;
+}
+
+body:not(.dark) .faq-page{
+    --f-page-h3: #3B322A;
+}
+
+.faq-page h3{
+    text-align: center;
+    color: var(--f-page-h3);
+}
