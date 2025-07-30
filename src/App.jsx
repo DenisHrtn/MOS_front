@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import React, { useEffect } from 'react';
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Contacts from "./pages/Contacts/Contacts";
@@ -7,7 +8,6 @@ import Portfolio from "./pages/Portfolio/Portfolio";
 import PortfolioProject from "./pages/PortfolioProject/PortfolioProject";
 import Footer from "./ components/Footer/Footer";
 import Header from "./ components/Header/Header";
-import TimeLine from "./ components/TimeLine/TimeLine";
 import "./ components/FAQ/faq.css";
 import "./global.css";
 import "./ components/Header/header.css";
@@ -19,9 +19,17 @@ import "./pages/Contacts/contacts.css";
 import "./pages/Portfolio/portfolio.css";
 import "./pages/PortfolioProject/portfolioProject.css";
 import "./pages/FAQPage/FAQPage.css"
+import pingBackend from "./pinger-back"
 
 
 const App = () => {
+    useEffect(() => {
+        pingBackend();
+        const interval = setInterval(pingBackend, 4 * 60 * 1000);
+
+        return () => clearInterval(interval);
+    }, []);
+
   return (
       <Router>
         <div className="app-container">
@@ -39,5 +47,8 @@ const App = () => {
     </Router>
   );
 };
+
+
+
 
 export default App;
