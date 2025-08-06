@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import React, { useEffect } from 'react';
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Contacts from "./pages/Contacts/Contacts";
@@ -19,18 +18,8 @@ import "./pages/Contacts/contacts.css";
 import "./pages/Portfolio/portfolio.css";
 import "./pages/PortfolioProject/portfolioProject.css";
 import "./pages/FAQPage/FAQPage.css"
-import pingBackend from "./pinger-back"
-
 
 const App = () => {
-    useEffect(() => {
-        pingBackend();
-
-        const interval = setInterval(pingBackend, 0.5 * 60 * 1000);
-
-        return () => clearInterval(interval);
-    }, []);
-
   return (
       <Router>
         <div className="app-container">
