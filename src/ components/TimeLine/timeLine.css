@@ -1,11 +1,19 @@
-body.dark .main-line{
+body.dark .time-line{
     --main-line-bg: #fff;
     --period-bg: #f4f4f4;
+    --button-bg: red;
+    --button-bg-hover: #c91f5e;
+    --modal-window-bg: #464646;
+    --modal-window-h2: #f8f2f2;
 }
 
-body:not(.dark) .main-line{
+body:not(.dark) .time-line{
     --main-line-bg: #bdaeaa;
     --period-bg: #b1a39f;
+    --button-bg: red;
+    --button-bg-hover: #c91f5e;
+    --modal-window-bg: #ece4e2;
+    --modal-window-h2: #3f3f3f;
 }
 
 .main-line {
@@ -132,7 +140,7 @@ body:not(.dark) .main-line{
 }
 
 .modal-window {
-  background: #464646;
+  background: var(--modal-window-bg);
   padding: 30px;
   border-radius: 10px;
   max-width: 500px;
@@ -142,5 +150,23 @@ body:not(.dark) .main-line{
 }
 
 .modal-window h2 {
-  color: #cbcbcb;
+  color: var(--modal-window-h2);
+}
+
+.close-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: var(--button-bg);
+    color: #e3dddd;
+    padding: 10px 18px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    border: 1px;
+}
+
+.close-button:hover {
+  background-color: var(--button-bg-hover);
 }
