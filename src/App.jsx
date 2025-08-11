@@ -7,6 +7,7 @@ import Portfolio from "./pages/Portfolio/Portfolio";
 import PortfolioProject from "./pages/PortfolioProject/PortfolioProject";
 import Footer from "./ components/Footer/Footer";
 import Header from "./ components/Header/Header";
+import NotFound from "./ components/NotFound/NotFound";
 import "./ components/FAQ/faq.css";
 import "./global.css";
 import "./ components/Header/header.css";
@@ -18,6 +19,7 @@ import "./pages/Contacts/contacts.css";
 import "./pages/Portfolio/portfolio.css";
 import "./pages/PortfolioProject/portfolioProject.css";
 import "./pages/FAQPage/FAQPage.css"
+import "./ components/NotFound/notFound.css"
 
 const App = () => {
   return (
@@ -31,6 +33,7 @@ const App = () => {
               <Route path="/portfolio" element={<Portfolio />} />
               <Route path="/faq" element={<FAQPage />} />
               <Route path="/portfolio/project/:id" element={<PortfolioProject />} />
+              <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
       </div>

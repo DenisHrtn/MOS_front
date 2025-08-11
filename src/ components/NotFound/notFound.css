@@ -1,0 +1,60 @@
+body:not(.dark) .texts {
+    --crash-text-h2: #6a5e55;
+    --crash-text-p: #5d534a;
+    --button-bg: #1588c2;
+    --button-bg-hover: #136d9a;
+}
+
+:root {
+    --crash-text-h2: #f4efeb; 
+    --crash-text-p: #e0d9d3;
+    --button-bg: #16b1ff;
+    --button-bg-hover: #2291c8;
+}
+
+.texts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.texts h1 {
+    text-align: center;
+    color: var(--crash-text-h2);
+    font-size: 90px;
+}
+
+.texts P {
+    text-align: center;
+    color: var(--crash-text-p);
+    font-size: 25px;
+}
+
+.texts .back-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: var(--button-bg);
+    color: #fff;
+    margin-top: 40px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.texts .back-button:hover {
+    background-color: var(--button-bg-hover);
+}
+
+.texts .picture {
+    position: absolute;
+    top: 300px;
+    width: 500px;
+    height: 400px;
+    object-fit: cover;
+    z-index: -1;
+    filter: blur(2px);
+    margin-bottom: 15px;
+}
