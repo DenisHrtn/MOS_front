@@ -1,7 +1,8 @@
-const API_URL = process.env.REACT_APP_API_URL;
+const API_URL = process.env.REACT_APP_BACKEND_URL;
 
 export const request = async (endpoint, options = {}) => {
   const url = `${API_URL}${endpoint}`;
+  console.log(url)
 
   const defaultHeaders = {
     'Content-Type': 'application/json',
