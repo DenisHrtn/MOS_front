@@ -15,7 +15,6 @@ const About = () => {
 
     if (loading) return <p>Loading...</p>;
     if (error) return <p>Error...</p>;
-    console.log(getAboutMe)
 
     return (
         <div className={"about-container"}>
