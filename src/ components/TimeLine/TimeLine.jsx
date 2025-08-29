@@ -35,9 +35,9 @@ const TimeLine = () => {
                 <div className="modal-overlay" onClick={closeModal}>
                     <div className="modal-window" onClick={(e) => e.stopPropagation()}>
                         <h2>{modalContent}</h2>
-                        <button className="close-button" onClick={closeModal}>close window</button>
+                        <button className="close-button" onClick={closeModal}>Закрыть</button>
+                        </div>
                     </div>
-                </div>
             )}
         </div>
     );
