@@ -9,8 +9,13 @@ const About = () => {
     useEffect(() => {
         getAboutMe()
             .then(data => setUserInfo(data))
-            .catch(err => setError(err.message))
-            .finally(() => setLoading(false));
+            .catch(async err => {
+                if (err.response) {
+                    const text = await err.response.text();
+                    console.error("API error response:", text);
+                }
+                setError(err.message);
+            })
     }, []);
 
     if (loading) return <p>Loading...</p>;
