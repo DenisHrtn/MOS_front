@@ -7,16 +7,18 @@ const About = () => {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        getAboutMe()
-            .then(data => setUserInfo(data))
-            .catch(async err => {
-                if (err.response) {
-                    const text = await err.response.text();
+    getAboutMe()
+        .then(data => setUserInfo(data))
+        .catch(err => {
+            if (err.response) {
+                err.response.text().then(text => {
                     console.error("API error response:", text);
-                }
-                setError(err.message);
-            })
-    }, []);
+                });
+            }
+            setError(err.message);
+        })
+        .finally(() => setLoading(false));
+}, []);
 
     if (loading) return <p>Loading...</p>;
     if (error) return <p>Error...{error}</p>;
